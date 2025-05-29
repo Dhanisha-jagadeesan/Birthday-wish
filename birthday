@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Harish 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #ffd1dc, #ffe6f0);
+      color: #333;
+      overflow: hidden;
+    }
+    .login {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: linear-gradient(to bottom right, #ffc0cb, #ffe6f0);
+    }
+    input {
+      margin: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      width: 300px;
+    }
+    .login-btn {
+      background-color: #ff5e78;
+      color: white;
+      font-size: 18px;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .login-btn::after {
+      content: ' ✅ Yes';
+    }
+    #mainContent > div:not(:first-child) {
+      display: none;
+    }
+    .next-btn {
+      margin-top: 20px;
+      background: #ff99bb;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+    }
+    #mainContent {
+      display: none;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    .final-message {
+      font-size: 24px;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #d63384;
+    }
+    .heart {
+      position: fixed;
+      bottom: -50px;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      transform: rotate(45deg);
+      animation: floatUp 4s ease-in infinite;
+    }
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) rotate(45deg); opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(45deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <audio id="bgAudio" preload="auto">
+    <source src="https://api.soundcloud.com/tracks/1711011411/stream?client_id=YOUR_CLIENT_ID" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="login" id="loginPage">
+    <h1>Welcome 💖</h1>
+    <input type="text" id="username" placeholder="Enter Username" />
+    <input type="password" id="password" placeholder="Enter Password" />
+    <button class="login-btn" onclick="login()"></button>
+  </div>
+
+  <div id="mainContent">
+    <div>
+      <h2>Welcome Harish, Wish you many more happy returns of the day. I hope You'll Like it. I put lot of efforts to Create this.</h2>
+      <button class="next-btn" onclick="showNext(this)">Next</button>
+    </div>
+
+    <div>
+      <p style="font-style: italic; font-size: 20px; margin: 30px auto; max-width: 800px;">
+        In every beat of silence I hold your name,<br/>
+        Loving you, expecting nothing, no fame.<br/>
+        My heart speaks where lips stay sealed,<br/>
+        One-sided love, never fully revealed.<br/>
+        Still I smile, though you're unaware,<br/>
+        For loving you alone, nothing can compare.
+      </p>
+      <button class="next-btn" onclick="showNext(this)">Next</button>
+    </div>
+
+    <div>
+      <p style="white-space: pre-line; font-size: 18px; max-width: 800px; margin: auto;">
+        Papa naan unaiya 2017 love panatha vida ipa athigama than love panren, enaku theriyum unala enaiya accept panika mudiyalanu. naan athuku ethuvum solala, unoda decision ku naan respect panren. nee apa enaiya athigam love pana but naan vitutu poiten, ipa athuve reverse, karma is real. ethuku enaiya avoid panrenu nala puriyuthu, waste enaku kastam kuduka vendamnu ninaichi irupa, enaku nee kudutha antha 3 month life ah romba nala irunthuchu. again naan oru love feel panen. ipavum naan unaiya love panren than, but unaiya love pana soli ketkala and marriage pana soli ketkala. please unmaiya solu unaku unmaiya enmela love illaiya, naan itha vachi black mail pana porathu illa da, i just want to know that avlothan. nee other girls pathi pesum pothu enaku avlo kastama irukum, naanum human thane valikum thane but nee happy ah iruntha ok. maybe you deserve someone better than me. naan expect panathu ethuvum kidaika porathu illa, but last vara unaiya love panite irupen athu pothum, ithu summa dialogue solala, enoda past life la naan anubavicha lessons vachi than soluren, ipa than love na ennanu full meaning puriyuthu. puriyum pothu nee illa. ok naan vera birthday wish pana vanthutu polambitu iruken. nee epavum happy ah irukanum unaku pidichavanga kooda, life long happy ah iru. naan unagaka mattum than antha god kita again poitu nikkuren. so unaiya happy ah vaipparu. Happy birth day my dear papa love soulmate thimuru pidichavan friend ....
+      </p>
+      <button class="next-btn" onclick="showNext(this)">Next</button>
+    </div>
+
+    <div>
+      <div class="final-message">🎉 HAPPY BIRTHDAY HARISH 🎂🎈</div>
+      <button class="next-btn" onclick="showNext(this)">Next</button>
+    </div>
+
+    <div>
+      <div class="final-message">🎂 Thank you for being in my life. I’ll always cherish you. 💖</div>
+      <button class="next-btn" onclick="showNext(this)">Next</button>
+    </div>
+
+    <div>
+      <p style="font-size: 22px; font-weight: bold; color: #cc3366; max-width: 700px; margin: 30px auto;">
+        I hope this little surprise brought a smile to your face 💝<br/>
+        No matter what, you’ll always hold a special place in my heart.<br/>
+        Have a fabulous birthday and an amazing year ahead! 🎉💫
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      if (user === 'I Love You Harish, Please Don\'t Hate Me' && pass === 'Will You Marry Me?') {
+        document.getElementById('loginPage').style.display = 'none';
+        document.getElementById('mainContent').style.display = 'block';
+        showSection(0);
+        launchHearts();
+
+        const audio = document.getElementById('bgAudio');
+        audio.play().catch(e => {
+          console.warn("Autoplay failed. User interaction needed.");
+        });
+      } else {
+        alert('Wrong username or password.');
+      }
+    }
+
+    function showSection(index) {
+      const sections = document.querySelectorAll('#mainContent > div');
+      sections.forEach((section, i) => {
+        section.style.display = i === index ? 'block' : 'none';
+      });
+    }
+
+    function showNext(button) {
+      const allSections = document.querySelectorAll('#mainContent > div');
+      for (let i = 0; i < allSections.length; i++) {
+        if (allSections[i].contains(button)) {
+          showSection(i + 1);
+          break;
+        }
+      }
+    }
+
+    function launchHearts() {
+      for (let i = 0; i < 20; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = 2 + Math.random() * 3 + 's';
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 5000);
+      }
+    }
+  </script>
+</body>
+</html>
